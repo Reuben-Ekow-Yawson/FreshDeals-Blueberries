@@ -1,0 +1,31 @@
+.breadcrumb li{
+    display:inline;
+  }
+  .breadcrumb li.location+li.location::before {
+    content: "> ";
+  }
+  .breadcrumb li.location a:hover{
+    color:#fff;
+    text-decoration: underline;
+    background: #9f9fa3;
+    font-size: 17px;
+  }
+  .breadcrumb li.attribute a {
+    color: #4d4f53;
+    margin-left: 13px;
+  }
+  .breadcrumb li.attribute::after {
+    content: "*";
+    color: grey;
+    font-size: 10px;
+    vertical-align: super;
+  }
+  .breadcrumb li.attribute a:hover{
+    color: #000;
+    background: green;
+    font-size: 17px;
+  }
+  .breadcrumb{
+    padding: 7px;
+    margin: auto;
+  }
